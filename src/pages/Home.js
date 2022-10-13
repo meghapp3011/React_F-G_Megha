@@ -80,30 +80,37 @@ class Home extends Component {
                 Please enter the value for the above field.
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-5 ">
               <label for="InputEmail2" className="form-label">
                 Phone Number<span style={{ color: "red" }}>*</span>
               </label>
-              <div className="col-1">
-                <select value={this.state.value} onChange={this.handleChange}>
-                  <option value="Canada">
-                    {" "}
-                    {"\uD83C\uDDE8\uD83C\uDDE6"} Canada
-                  </option>
-                  <option value="United States">
-                    {"\uD83C\uDDFA\uD83C\uDDF8"} United States
-                  </option>
-                </select>
+              <div className="d-flex justify-content-between">
+                <div>
+                  <select
+                    value={this.state.value}
+                    onChange={this.handleChange}
+                    style={{ width: "100px", height: "35px" }}
+                  >
+                    <option value="Canada">
+                      {" "}
+                      {"\uD83C\uDDE8\uD83C\uDDE6"} Canada
+                    </option>
+                    <option value="United States">
+                      {"\uD83C\uDDFA\uD83C\uDDF8"} United States
+                    </option>
+                  </select>
+                </div>
+                <div style={{ width: "500px" }}>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Phone number"
+                    id="InputEmail2"
+                    aria-label="Last name"
+                    onChange={this.emailValidator}
+                  />
+                </div>
               </div>
-
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Phone number"
-                id="InputEmail2"
-                aria-label="Last name"
-                onChange={this.emailValidator}
-              />
               <div
                 id="validationServerUsernameFeedback"
                 className="invalid-feedback"
@@ -112,10 +119,14 @@ class Home extends Component {
               </div>
             </div>
             <div className="col-5">
-              <label for="InputEmail2" className="form-label">
-                Please rate the quality of the service you received from your host<span style={{ color: "red" }}>*</span>
-              </label>
+              <div class="col-7 col-md-7 col-sm-5 col-xs-10 ">
+                <label for="InputEmail2" className="form-label">
+                  Please rate the quality of the service you received from your
+                  host<span style={{ color: "red" }}>*</span>
+                </label>
+              </div>
             </div>
+            <div class="row"></div>
             <div className="col-5">
               <button className="btn btn-primary"> submit </button>
             </div>
