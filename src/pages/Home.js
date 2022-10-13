@@ -80,16 +80,18 @@ class Home extends Component {
                 Please enter the value for the above field.
               </div>
             </div>
-            <div className="col-5 ">
-              <label for="InputEmail2" className="form-label">
+            </div>
+            <div className="row justify-content-center my-8">
+            <div className="col-3">
+              <label for="InputEmail2" className="form-label" >
                 Phone Number<span style={{ color: "red" }}>*</span>
               </label>
               <div className="d-flex justify-content-between">
-                <div>
                   <select
                     value={this.state.value}
                     onChange={this.handleChange}
                     style={{ width: "100px", height: "35px" }}
+                    className="form-control"
                   >
                     <option value="Canada">
                       {" "}
@@ -99,8 +101,7 @@ class Home extends Component {
                       {"\uD83C\uDDFA\uD83C\uDDF8"} United States
                     </option>
                   </select>
-                </div>
-                <div style={{ width: "500px" }}>
+                <div className="col-12 my-8">
                   <input
                     type="text"
                     className="form-control"
@@ -118,21 +119,23 @@ class Home extends Component {
                 Please enter the value for the above field.
               </div>
             </div>
-            <div className="col-5">
-              <div class="col-7 col-md-7 col-sm-5 col-xs-10 ">
+            <div className="col-7 "></div>
+          <div class="row ">
+              <div className="col-7">
                 <label for="InputEmail2" className="form-label">
                   Please rate the quality of the service you received from your
                   host<span style={{ color: "red" }}>*</span>
                 </label>
               </div>
             </div>
+            </div>
+
             <div class="row"></div>
             <div className="col-5">
               <button className="btn btn-primary"> submit </button>
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }
