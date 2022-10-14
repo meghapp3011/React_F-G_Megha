@@ -6,6 +6,9 @@ import Home from './pages/Home'
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Test from "./pages/Test";
+import Success from "./pages/Success";
+import FeedbackList from './pages/FeedbackList';
+
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="*" element={<NoPage />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/feedback" element={<FeedbackList />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

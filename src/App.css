@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+.select {
+  width: 130px;
+  height: 35px;
+}
+.phone{
+  width: 500px;
+}
+.checks4{
+  margin-left: 275px;
+}
+.checks2{
+  margin-left:88px;
+}
+.tick{
+  color:green;
+  font-size: 90px;
+  margin-left:245px
+  
+}
+.card-box{
+  margin-left:240px
+}
+.header{
+  padding-left: 19px;
+}
+h5{
+  padding-left:50px;
+}
