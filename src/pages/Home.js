@@ -130,12 +130,7 @@ class Home extends Component {
                 </label>
               </div>
               <div className="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="inlineCheckbox1"
-                  value="option1"
-                />
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"/>
                 <label class="form-check-label" for="inlineCheckbox1">
                   Good
                 </label>
@@ -215,13 +210,15 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="row  my-2">
+          <div className="row  my-2" >
             <div className="col-4 checks3">
-              <label for="InputEmail2" className="form-label">
+              <div>
+              <label for="InputEmail2" className="form-label" >
                 Was our restaurant clean ?
                 <span style={{ color: "red" }}>*</span>
               </label>
-              <div className="form-check form-check-inline">
+              </div>
+              <div className="form-check form-check-inline" >
                 <input
                   class="form-check-input"
                   type="checkbox"
@@ -318,8 +315,8 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-5 ">
+          <div className="row" style={{marginTop:'20px'}}>
+            <div className="col-10 d-flex flex-row-reverse">
               <button className="btn btn-success "> Submit Review </button>
             </div>
           </div>
