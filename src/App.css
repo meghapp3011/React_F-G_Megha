@@ -43,12 +43,12 @@
 .phone{
   width: 500px;
 }
-.checks4{
-  margin-left: 275px;
-}
-.checks2{
+/* .checks4{
+  margin-left: 315;
+} */
+/* .checks2{
   margin-left:88px;
-}
+} */
 .tick{
   color:green;
   font-size: 90px;
@@ -64,3 +64,6 @@
 h5{
   padding-left:50px;
 }
+/* .col-5.checks4 {
+  margin-left: 315px;
+} */
